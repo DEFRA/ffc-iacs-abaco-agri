@@ -18,7 +18,7 @@ sso-server-2-multidb:
 
 party-registry:
   db: postgres
-  ignoreACL:
+  ignoreACL: true
 
 lau-service:
   db: postgres
