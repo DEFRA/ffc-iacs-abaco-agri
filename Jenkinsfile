@@ -5,8 +5,8 @@ def validateClosure = {
     withCredentials([
       usernamePassword(credentialsId: 'abaco-docker-registry', usernameVariable: 'username', passwordVariable: 'password')
     ]) {
-      ctx.sh("helm repo add --force-update $repoName $ABACO_DOCKER_REGISTRY --username $username --password $password")
-      ctx.sh('helm repo update')
+      sh("helm repo add --force-update $repoName $ABACO_DOCKER_REGISTRY --username $username --password $password")
+      sh('helm repo update')
     }
   }
 }
