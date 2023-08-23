@@ -1,3 +1,5 @@
+workstream: ffc-iacs
+
 global:
   admission:
     type: apigateway
