@@ -22,4 +22,4 @@ party-registry:
 lau-service:
   db: postgres
 
-ignoreACL: true
+party-registry.ignoreACL:
