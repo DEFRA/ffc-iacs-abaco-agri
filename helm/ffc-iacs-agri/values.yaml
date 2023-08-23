@@ -10,7 +10,7 @@ sso2-login-page:
   admission:
     type: apigateway
     Subpath: sso2-login
-    
+
 sso-server-2-multidb:
   cmPrefix: ""
   secPrefix: ""
@@ -18,8 +18,7 @@ sso-server-2-multidb:
 
 party-registry:
   db: postgres
+  ignoreACL:
 
 lau-service:
   db: postgres
-
-party-registry.ignoreACL:
