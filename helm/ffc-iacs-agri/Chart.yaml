@@ -1,0 +1,37 @@
+apiVersion: v2
+name: ffc-iacs-agri
+description: DEFRA abaco agri
+
+type: application
+
+version: 0.0.3
+appVersion: "v0.0.3"
+
+dependencies:
+- name: abaco-portal-s1
+  version: "v1.0.0"
+  repository: "@nexus"
+- name: api-gateway
+  version: "v1.3.0"
+  repository: "@nexus"
+- name: external-auth-sso2
+  version: "v1.3.1"
+  repository: "@nexus"
+- name: file-store
+  version: "v4.2.2"
+  repository: "@nexus"
+- name: lau-service
+  version: "v2.0.0"
+  repository: "@nexus"
+- name: party-registry
+  version: "v1.4.3"
+  repository: "@nexus"
+- name: party-registry-ui
+  version: "v0.1.21"
+  repository: "@nexus"
+- name: sso2-login-page
+  version: "v1.0.1"
+  repository: "@nexus"
+- name: sso-server-2-multidb
+  version: "v2.30.3"
+  repository: "@nexus"

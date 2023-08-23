@@ -1,0 +1,21 @@
+global:
+  admission:
+    type: apigateway
+
+host: placeholder.com
+
+sso2-login-page:
+  admission:
+    type: apigateway
+    Subpath: sso2-login
+    
+sso-server-2-multidb:
+  cmPrefix: ""
+  secPrefix: ""
+  db: postgres
+
+party-registry:
+  db: postgres
+
+lau-service:
+  db: postgres
