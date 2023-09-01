@@ -28,10 +28,10 @@ dependencies:
   repository: "@nexus"
 - name: party-registry-ui
   version: "v0.1.21"
-  repository: "@nexus"  
+  repository: "@nexus"
 - name: sso2-login-page
   version: "v1.0.1"
-  repository: "@nexus"  
+  repository: "@nexus"
 - name: sso-server-2-multidb
   version: "v2.32.3"
   repository: "@nexus"
