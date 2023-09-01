@@ -1,6 +1,6 @@
 {
   "name": "ffc-iacs-agri",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Helm chart to setup Abaco Agri dependencies",
   "repository": {
     "type": "git",
@@ -8,7 +8,8 @@
   },
   "author": "Defra DDTS",
   "contributors": [
-    "John Watson john.watson1@defra.gov.uk"
+    "John Watson john.watson1@defra.gov.uk",
+    "Simon Dunn simon.dunn1@defra.gov.uk"
   ],
   "license": "OGL-UK-3.0",
   "homepage": "https://github.com/DEFRA/ffc-iacs-agri#readme"

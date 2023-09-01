@@ -11,4 +11,4 @@ def validateClosure = {
   }
 }
 
-buildHelm validateClosure: validateClosure, skipLint: true
+buildHelm validateClosure: validateClosure

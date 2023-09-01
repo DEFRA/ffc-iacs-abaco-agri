@@ -4,8 +4,8 @@ description: DEFRA abaco agri
 
 type: application
 
-version: 0.0.3
-appVersion: "v0.0.3"
+version: 0.0.4
+appVersion: "v0.0.4"
 
 dependencies:
 - name: abaco-portal-s1
@@ -14,8 +14,8 @@ dependencies:
 - name: api-gateway
   version: "v1.3.0"
   repository: "@nexus"
-- name: external-auth-sso2
-  version: "v1.3.1"
+- name: external-auth-defra-poc
+  version: "v1.0.0"
   repository: "@nexus"
 - name: file-store
   version: "v4.2.2"
@@ -33,5 +33,5 @@ dependencies:
   version: "v1.0.1"
   repository: "@nexus"
 - name: sso-server-2-multidb
-  version: "v2.30.3"
+  version: "v2.32.3"
   repository: "@nexus"
