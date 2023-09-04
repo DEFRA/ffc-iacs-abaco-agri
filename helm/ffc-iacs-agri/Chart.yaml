@@ -12,7 +12,7 @@ dependencies:
   version: "v1.0.0"
   repository: "@nexus"
 - name: api-gateway
-  version: "v1.3.0"
+  version: "v1.4.0"
   repository: "@nexus"
 - name: external-auth-defra-poc
   version: "v1.0.0"
