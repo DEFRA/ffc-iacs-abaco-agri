@@ -6,19 +6,123 @@ global:
 
 host: placeholder.com
 
+anomaly-registry:
+  db: postgres
+
+applications:
+  db: postgres
+
+calculator-engine:
+  db: postgres
+
+crop-plan-client:
+  general_config: |-
+      {
+          "pointInTimeRangeMin": "3y",
+          "hideDeletePlot": false,
+          "hideFieldName": false,
+          "showParcelName": false,
+          "mode": "iacs",
+          "useApiGw": true,
+          "tenant": "master"
+      }
+
+crop-plan-api-external:
+  db: postgres
+  cmPrefix: ""
+  secPrefix: ""
+  env:
+  - name: JDBC_URL
+    valueFrom:
+      configMapKeyRef:
+        name: db
+        key: DB_CROPPLAN_JDBC_URL
+  - name: JDBC_USER
+    valueFrom:
+      configMapKeyRef:
+        name: db
+        key: DB_CROPPLAN_USER
+  - name: JDBC_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: db-pwd
+        key: DB_CROPPLAN_PASSWORD
+  - name: RABBITMQ_HOST
+    valueFrom:
+      configMapKeyRef:
+        name: stateless-env
+        key: RMQ_HOST
+  - name: RABBITMQ_USER
+    valueFrom:
+      configMapKeyRef:
+        name: stateless-env
+        key: RMQ_USER
+  - name: RABBITMQ_PASSWORD
+    valueFrom:
+      secretKeyRef:
+        name: stateless-pwd
+        key: RMQ_PASSWORD
+  - name: RABBITMQ_VIRUTALHOST
+    valueFrom:
+      configMapKeyRef:
+        name: stateless-env
+        key: RMQ_VHOST
+  - name: RABBITMQ_PORT
+    valueFrom:
+      configMapKeyRef:
+        name: stateless-env
+        key: RMQ_PORT
+  - name: AUTH_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: BUSINESS_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: CROP_PLAN_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: DOMAIN_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: LAYERS_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: CROP_CODES_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: VALIDATOR_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: SYNC_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: PROJECTION_TRANSFORMER_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: PESTICIDES_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: PESTS_PLUGIN_EXTERNAL_URL
+    value: "default"
+  - name: IGNORE_BUSINESS_ACCESS_LEVEL
+    value: "true"
+  - name: IGNORE_CROP_CODES_COMPATIBILITY
+    value: "true"
+
+customer-land-link:
+  db: postgres
+
+defra-application-forms:
+  db: postgres
+
+lau-service:
+  db: postgres
+
+lpis-gis-server:
+  db: postgres
+
+party-registry:
+  db: postgres
+
 sso2-login-page:
   admission:
     type: apigateway
     Subpath: sso2-login
-
+    
 sso-server-2-multidb:
   cmPrefix: ""
   secPrefix: ""
   db: postgres
 
-party-registry:
-  db: postgres
-  ignoreACL: true
-
-lau-service:
+task-manager:
   db: postgres
