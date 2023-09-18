@@ -113,6 +113,7 @@ lpis-gis-server:
 
 party-registry:
   db: postgres
+  ignoreACL: true
 
 sso2-login-page:
   admission:
