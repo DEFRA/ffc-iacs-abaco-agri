@@ -4,34 +4,85 @@ description: DEFRA abaco agri
 
 type: application
 
-version: 0.0.4
-appVersion: "v0.0.4"
+version: 0.0.5
+appVersion: "v0.0.5"
 
 dependencies:
 - name: abaco-portal-s1
   version: "v1.0.0"
   repository: "@nexus"
+- name: anomaly-registry
+  version: "v1.0.1"
+  repository: "@nexus"
 - name: api-gateway
   version: "v1.4.0"
+  repository: "@nexus"
+- name: applications
+  version: "v3.18.1"
+  repository: "@nexus"
+- name: applications-ui
+  version: "v1.2.1"
+  repository: "@nexus"
+- name: calculator-engine
+  version: "v0.1.0"
+  repository: "@nexus"
+- name: crop-plan-api-external
+  version: "v1.6.19"
+  repository: "@nexus"
+- name: crop-plan-client
+  version: "v1.0.90"
+  repository: "@nexus"
+- name: customer-land-link
+  version: "v0.0.6"
+  repository: "@nexus"
+- name: customer-land-link-ui
+  version: "v0.0.5"
+  repository: "@nexus"
+- name: defra-application-forms
+  version: "v0.0.2"
+  repository: "@nexus"
+- name: defra-application-forms-ui
+  version: "v0.0.1"
   repository: "@nexus"
 - name: external-auth-defra-poc
   version: "v1.0.0"
   repository: "@nexus"
+- name: farm-land-viewer-ui
+  version: "v1.3.5"
+  repository: "@nexus"
 - name: file-store
   version: "v4.2.2"
+  repository: "@nexus"
+- name: i18n-repository
+  version: "v118.0.0"
   repository: "@nexus"
 - name: lau-service
   version: "v2.0.0"
   repository: "@nexus"
+- name: lpis-editor-ui
+  version: "v1.3.10"
+  repository: "@nexus"
+- name: lpis-gis-server
+  version: "v1.3.19"
+  repository: "@nexus"
+- name: map-upload-server
+  version: "v0.0.2"
+  repository: "@nexus"
 - name: party-registry
-  version: "v1.4.3"
+  version: "v1.4.4"
   repository: "@nexus"
 - name: party-registry-ui
   version: "v0.1.21"
-  repository: "@nexus"
+  repository: "@nexus"  
 - name: sso2-login-page
   version: "v1.0.1"
-  repository: "@nexus"
+  repository: "@nexus"  
 - name: sso-server-2-multidb
   version: "v2.32.3"
+  repository: "@nexus"
+- name: task-manager
+  version: "v1.3.4"
+  repository: "@nexus"
+- name: task-manager-frontend
+  version: "v1.3.2"
   repository: "@nexus"
