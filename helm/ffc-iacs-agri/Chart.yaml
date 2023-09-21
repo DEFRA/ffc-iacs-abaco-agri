@@ -78,7 +78,7 @@ dependencies:
   version: "v1.0.1"
   repository: "@nexus"  
 - name: sso-server-2-multidb
-  version: "v2.32.3"
+  version: "v2.32.4"
   repository: "@nexus"
 - name: task-manager
   version: "v1.3.4"
