@@ -4,8 +4,8 @@ description: DEFRA abaco agri
 
 type: application
 
-version: 0.0.5
-appVersion: "v0.0.5"
+version: 0.0.6
+appVersion: "v0.0.6"
 
 dependencies:
 - name: abaco-portal-s1
@@ -18,19 +18,19 @@ dependencies:
   version: "v1.4.0"
   repository: "@nexus"
 - name: applications
-  version: "v3.18.1"
+  version: "v4.2.1"
   repository: "@nexus"
 - name: applications-ui
-  version: "v1.2.1"
+  version: "v1.2.9"
   repository: "@nexus"
 - name: calculator-engine
   version: "v0.1.0"
   repository: "@nexus"
 - name: crop-plan-api-external
-  version: "v1.6.19"
+  version: "v1.6.21"
   repository: "@nexus"
 - name: crop-plan-client
-  version: "v1.0.90"
+  version: "v1.0.91"
   repository: "@nexus"
 - name: customer-land-link
   version: "v0.0.6"
@@ -39,10 +39,10 @@ dependencies:
   version: "v0.0.5"
   repository: "@nexus"
 - name: defra-application-forms
-  version: "v0.0.2"
+  version: "v0.0.10"
   repository: "@nexus"
 - name: defra-application-forms-ui
-  version: "v0.0.1"
+  version: "v0.0.11"
   repository: "@nexus"
 - name: external-auth-defra-poc
   version: "v1.0.0"
@@ -54,7 +54,7 @@ dependencies:
   version: "v4.2.2"
   repository: "@nexus"
 - name: i18n-repository
-  version: "v118.0.0"
+  version: "v118.1.0"
   repository: "@nexus"
 - name: lau-service
   version: "v2.0.0"
@@ -63,7 +63,7 @@ dependencies:
   version: "v1.3.10"
   repository: "@nexus"
 - name: lpis-gis-server
-  version: "v1.3.19"
+  version: "v1.3.20"
   repository: "@nexus"
 - name: map-upload-server
   version: "v0.0.2"
