@@ -11,6 +11,7 @@ anomaly-registry:
 
 applications:
   db: postgres
+  checkCanRead: false
 
 calculator-engine:
   db: postgres
