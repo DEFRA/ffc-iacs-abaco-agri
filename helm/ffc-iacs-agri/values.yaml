@@ -4,7 +4,7 @@ global:
   admission:
     type: apigateway
 
-host: placeholder.com
+host: ""
 
 anomaly-registry:
   db: postgres
@@ -98,13 +98,18 @@ crop-plan-api-external:
   - name: IGNORE_BUSINESS_ACCESS_LEVEL
     value: "true"
   - name: IGNORE_CROP_CODES_COMPATIBILITY
-    value: "true"
+    value: "true"  
 
 customer-land-link:
   db: postgres
 
 defra-application-forms:
   db: postgres
+
+i18n-repository:
+  resources: 
+    limits:
+      memory: 768Mi
 
 lau-service:
   db: postgres
