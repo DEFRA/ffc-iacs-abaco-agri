@@ -4,8 +4,8 @@ description: DEFRA abaco agri
 
 type: application
 
-version: 0.0.7
-appVersion: "v0.0.7"
+version: 0.0.8
+appVersion: "v0.0.8"
 
 dependencies:
 - name: abaco-portal-s1
@@ -18,7 +18,7 @@ dependencies:
   version: "v1.4.0"
   repository: "@nexus"
 - name: applications
-  version: "v4.2.1"
+  version: "v4.6.1"
   repository: "@nexus"
 - name: applications-ui
   version: "v1.2.10"
@@ -39,10 +39,10 @@ dependencies:
   version: "v0.0.5"
   repository: "@nexus"
 - name: defra-application-forms
-  version: "v0.0.17"
+  version: "v0.0.23"
   repository: "@nexus"
 - name: defra-application-forms-ui
-  version: "v0.0.11"
+  version: "v0.1.0"
   repository: "@nexus"
 - name: external-auth-defra-poc
   version: "v1.0.0"
